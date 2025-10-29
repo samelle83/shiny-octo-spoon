@@ -15,6 +15,13 @@
 	margin-bottom: 1rem;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -98,7 +105,7 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
+	*, *:, *:after {
 		box-sizing: inherit;
 	}
 
@@ -106,7 +113,7 @@ input, select, textarea {
 		background: #1b1f22;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		body.is-preload *, body.is-preload *:, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -504,8 +511,8 @@ input, select, textarea {
 			position: relative;
 		}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label:,
+			input[type="radio"] + label: {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -518,8 +525,8 @@ input, select, textarea {
 				font-weight: 900;
 			}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label:,
+			input[type="radio"] + label: {
 				-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -537,26 +544,26 @@ input, select, textarea {
 				width: 1.65rem;
 			}
 
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
+		input[type="checkbox"]:checked + label:,
+		input[type="radio"]:checked + label: {
 			background: #ffffff !important;
 			border-color: #ffffff !important;
 			color: #1b1f22;
 			content: '\f00c';
 		}
 
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
+		input[type="checkbox"]:focus + label:,
+		input[type="radio"]:focus + label: {
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
-	input[type="checkbox"] + label:before {
+	input[type="checkbox"] + label: {
 		border-radius: 4px;
 	}
 
-	input[type="radio"] + label:before {
+	input[type="radio"] + label: {
 		border-radius: 100%;
 	}
 
@@ -1670,5 +1677,8 @@ input, select, textarea {
 
 
 
+#header .logo::before {
+  display: none;
+}
 
 
