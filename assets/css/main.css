@@ -7,11 +7,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .logo-img {
-  width: 200px;       /* adjust as needed */
+  width: 500px;       /* adjust as needed */
   height: auto;
   border-radius: 8px; /* optional */
   display: block;
   margin: 0 auto;
+	margin-bottom: 1rem;
 }
 
 html, body, div, span, applet, object,
@@ -1666,6 +1667,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
