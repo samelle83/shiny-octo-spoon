@@ -1700,38 +1700,28 @@ input, select, textarea {
 }
 
 
-/* Force-centre header nav on small screens */
+/* Clean, centered mobile nav */
 @media screen and (max-width: 736px) {
-  /* ensure nav takes full width */
-  #header nav {
-    width: 100% !important;
-  }
-
-  /* stack items but centre them */
   #header nav ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;    /* horizontal centering of each li */
-    justify-content: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none !important;
-    width: 100% !important;
-    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
   }
 
-  /* make each item full-width so the link sits centered */
   #header nav ul li {
-    display: block !important;
-    width: 100% !important;
-    margin: 0.25rem 0 !important;
+    margin: 0.5rem 0;
   }
 
-  /* centre the anchor text inside each li */
   #header nav ul li a {
-    display: inline-block !important;
-    text-align: center !important;
-    width: auto;
-    padding: 0.25rem 0;
+    display: inline-block;
+    padding: 0.5rem 1.25rem; /* tweak for touch space */
+    border-radius: 4px;
+    width: auto;             /* removes full-width stretching */
+    max-width: 80%;          /* optional safety for long text */
   }
 }
