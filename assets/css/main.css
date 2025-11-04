@@ -1681,4 +1681,7 @@ input, select, textarea {
   display: none;
 }
 
+#header .logo {
+  border: none;
+}
 
