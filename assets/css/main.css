@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .logo-img {
-  width: 500px;       /* adjust as needed */
+  width: 300px;       /* adjust as needed */
   height: auto;
   border-radius: 8px; /* optional */
   display: block;
@@ -1684,4 +1684,5 @@ input, select, textarea {
 #header .logo {
   border: none;
 }
+
 
